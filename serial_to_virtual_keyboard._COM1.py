@@ -1,19 +1,17 @@
-#pip3 install pynput pyserial
-
 import serial
 from pynput.keyboard import Key, Controller
 
 
 ser = serial.Serial(
-    port='COM1',    # Numer portu szeregowego (zmień na odpowiedni dla Twojego systemu)
-    baudrate=9600,  # Prędkość transmisji danych
-    timeout=1       # Czas oczekiwania na odczyt danych
+    port='COM1',    # Number of COM port, change for your system
+    baudrate=9600,  # Port speed
+    timeout=1       # Wait for read
 )
 
 
 
 
-print("OK, działa czekam na dane z COM1")
+print("OK, It work's waiting for data from COM1")
 
 keyboard = Controller()
 
@@ -28,4 +26,4 @@ try:
 			keyboard.release(Key.enter)
             
 except:
-	print("Koniec pracy programu")
+	print("Program closed")	
