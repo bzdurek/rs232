@@ -7,7 +7,7 @@ import glob
 
 
 ser = serial.Serial(
-    port='COM3',    # Numer portu szeregowego (zmień na odpowiedni dla Twojego systemu)
+    port='COM1',    # Numer portu szeregowego (zmień na odpowiedni dla Twojego systemu)
     baudrate=9600,  # Prędkość transmisji danych
     timeout=1       # Czas oczekiwania na odczyt danych
 )
