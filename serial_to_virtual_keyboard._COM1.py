@@ -16,7 +16,7 @@ ser = serial.Serial(
 
 
 print("OK, działa - czekam na dane z COM1 - 9600")
-print("Program pobiera wagę ignorując [] i jednostkę, kropkę zamienia na przecinek")
+print("Program pobiera wagę ignorując [] i jednostkę, kropkę zamienia na przecinek w celu lepszej współpracy z Excelem")
 print("Naciśnij ctrl + c aby wyjść z programu")
 
 keyboard = Controller()
